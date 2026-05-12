@@ -1,8 +1,8 @@
 # Análise de Sazonalidade e Tendência de Carga Global: SIN (2021-2023)
 
-## 📖 Visão Geral do Projeto
+## Visão Geral do Projeto
 Este sistema foi desenvolvido para automatizar o ciclo de vida de dados (extração, tratamento e análise) da carga verificada do Sistema Interligado Nacional (SIN). Utilizando dados brutos da API do Operador Nacional do Sistema Elétrico (ONS), a solução fornece subsídios estatísticos para a compreensão de variações sazonais e o planejamento energético.
-## ⚙️ Funcionalidades Detalhadas
+## Funcionalidades Detalhadas
 
 ### 1. Ingestão de Dados Resiliente
 - **Paginação Mensal:** O motor de busca fraciona as requisições mês a mês para contornar limites de *rate limiting* e volume de dados da API do ONS, garantindo que 100% da série histórica seja recuperada sem perdas.
@@ -20,12 +20,12 @@ Este sistema foi desenvolvido para automatizar o ciclo de vida de dados (extraç
 ### 4. Governança e Transparência
 - **Sistema de Logs:** Registro detalhado de cada etapa do pipeline no arquivo `log.txt`, permitindo auditoria técnica do status das requisições à API.
 
-## 📊 Insights Identificados
+## Insights Identificados
 Durante a execução, o projeto evidenciou padrões críticos no triênio analisado:
 - **Impacto do El Niño (2023):** Foi detectada uma anomalia na carga da Primavera de 2023, superando médias históricas devido às ondas de calor intensas no segundo semestre.
 - **Evolução da Carga Base:** Crescimento sustentado do consumo nos subsistemas analisados, refletindo a dinâmica econômica do período.
 
-## 🛠️ Requisitos de Execução
+## Requisitos de Execução
 O projeto foi estruturado para ser 100% compatível com ambientes Windows e Python 3.11+:
 
 1.  **Instalação de Dependências:**
@@ -37,7 +37,7 @@ O projeto foi estruturado para ser 100% compatível com ambientes Windows e Pyth
     python analise_eneva.py
     ```
 
-## 📂 Arquitetura de Arquivos
+## Arquitetura de Arquivos
 - `analise_eneva.py`: Script principal com a lógica de negócio.
 - `requirements.txt`: Lista de bibliotecas e versões específicas.
 - `Analise_Eneva_Pedro.xlsx`: Relatório de saída formatado.
