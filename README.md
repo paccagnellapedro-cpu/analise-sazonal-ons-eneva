@@ -40,11 +40,17 @@ Diferente de uma análise puramente acadêmica, esta ferramenta suporta decisõe
 ## Requisitos de Execução
 O projeto foi estruturado para ser 100% compatível com ambientes Windows e Python 3.11+:
 
-1.  **Instalação de Dependências:**
+1. **Clonar o repositório e acessar a pasta do projeto:**
+   Abra o seu terminal (Prompt de Comando ou PowerShell) e execute:
+   ```bash
+   git clone [https://github.com/paccagnellapedro-cpu/analise-sazonal-ons-eneva.git](https://github.com/paccagnellapedro-cpu/analise-sazonal-ons-eneva.git)
+   cd analise-sazonal-ons-eneva
+
+2.  **Instalação de Dependências:**
     ```bash
     pip install -r requirements.txt
     ```
-2.  **Execução do Pipeline:**
+3.  **Execução do Pipeline:**
     ```bash
     python analise_eneva.py
     ```
