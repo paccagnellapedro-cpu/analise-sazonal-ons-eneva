@@ -20,10 +20,22 @@ Este sistema foi desenvolvido para automatizar o ciclo de vida de dados (extraç
 ### 4. Governança e Transparência
 - **Sistema de Logs:** Registro detalhado de cada etapa do pipeline no arquivo `log.txt`, permitindo auditoria técnica do status das requisições à API.
 
-## Insights Identificados
-Durante a execução, o projeto evidenciou padrões críticos no triênio analisado:
-- **Impacto do El Niño (2023):** Foi detectada uma anomalia na carga da Primavera de 2023, superando médias históricas devido às ondas de calor intensas no segundo semestre.
-- **Evolução da Carga Base:** Crescimento sustentado do consumo nos subsistemas analisados, refletindo a dinâmica econômica do período.
+## Análise Técnica e Interpretação dos Resultados
+
+Abaixo, detalha-se a lógica analítica aplicada aos outputs gerados, correlacionando os dados estatísticos com o cenário do setor elétrico brasileiro:
+
+### 1. Dinâmica de Recuperação da Carga (2021-2023)
+Através da aba `Crescimento_Delta` do relatório, observa-se a trajetória de recuperação da carga do SIN. Enquanto 2021 apresentava reflexos de restrições de despacho por crise hídrica, 2023 consolidou um novo patamar de demanda. O crescimento detectado não é linear, exigindo uma gestão fina da reserva de potência.
+
+### 2. Anomalia de Demanda Térmica (Primavera de 2023)
+O gráfico de tendência (`grafico_comparativo_final.png`) revela um descolamento atípico das curvas de carga no segundo semestre de 2023.
+* **Diagnóstico:** A carga na **Primavera de 2023** superou médias históricas devido às ondas de calor intensificadas pelo fenômeno **El Niño**.
+* **Impacto:** Evidencia a crescente sensibilidade do SIN à demanda térmica (climatização), fator crítico para o planejamento de despacho termelétrico.
+
+### 3. Utilidade Estratégica para a Operação
+Diferente de uma análise puramente acadêmica, esta ferramenta suporta decisões operacionais:
+* **Previsibilidade de Despacho:** Identifica janelas críticas para manutenção e disponibilidade de combustível.
+* **Estratégia de Oferta:** A métrica de *Delta* por estação auxilia na mensuração de risco e volatilidade de carga.
 
 ## Requisitos de Execução
 O projeto foi estruturado para ser 100% compatível com ambientes Windows e Python 3.11+:
